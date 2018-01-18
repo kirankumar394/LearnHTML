@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kiran</title>
+
+        <style>
+            .greenText {
+                color: green;
+            }
+
+            .blueText {
+                font-size: 50px;
+                color: blue;
+                text-align: center;
+            }
+
+            .MyButton {
+                width:100%;
+                margin: auto;
+                padding: 10px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 class="greenText blueText">Tutorial #1</h1>
+        <button id="KiranButton" class="MyButton">Click me</button>
+        <button id="ResetButton" class="MyButton">Reset</button>
+        <h2 id="KiranText" class="blueText"></h2>
+
+        
+        <script>
+            document.getElementById('KiranButton').addEventListener('click', function(){
+                // When button clicked
+                console.log('hello world');
+                document.getElementById('KiranText').innerHTML = "Hello Kiran";
+            });
+
+            document.getElementById('ResetButton').addEventListener('click', function(){
+                document.getElementById('KiranText').innerHTML = "";
+            });
+        </script>
+    </body>
+</html>
